@@ -26,7 +26,7 @@ export class _Blank extends React.Component {
 
   render = () => (
     <View>
-      <Text style={{ fontSize: 18, color: "#cc2424" }} />
+      <Text style={{ paddingTop: 9 }} />
     </View>
   )
 }
