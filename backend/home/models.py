@@ -8,8 +8,8 @@ from django.db import models
 
 class CustomText(models.Model):
     title1 = models.CharField(
-        max_length=150,
         blank=True,
+        max_length=150,
     )
 
     def __str__(self):
@@ -34,3 +34,11 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class Polls(models.Model):
+    "Generated Model"
+    name = models.CharField(
+        max_length=256,
+    )
+    is_a_field = models.BooleanField()
